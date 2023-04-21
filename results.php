@@ -9,13 +9,13 @@ if ($age >= 18) {
 
 }
 
-  // Diplay if user can watch PG or PG-13 movies
+  // Display if user can watch PG or PG-13 movies
 else if ($age >= 13) {
   echo "You can't watch R rated movies by yourself, but you can watch anything else (PG, PG-13 or G).";
 
 }
 
-  // Diplay if user can watch G ated movies
+  // Display if user can watch G rated movies
 else if ($age >= 5) {
   echo "You can't watch R, PG-13 or PG rated movies by yourself, but you can watch G rated movies.";
 
@@ -25,6 +25,11 @@ else if ($age >= 5) {
 else if ($age >= 0) {
   echo "You can't watch any movie by yourself, please enter a valid age.";
 
+}
+
+// Display is the user does not enter a valid age
+else {
+  echo "Please enter a valid age.";    
 }
 
 ?>
